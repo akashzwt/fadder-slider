@@ -224,21 +224,12 @@ $(function () {
 		var swipe_blocks = $this.find(".fade-outer");
 		
 		swipe_blocks.swipe( {
-			//Single swipe handler for left swipes
 			swipeLeft:function(event, direction, distance, duration, fingerCount) {
 			  next_move()
 			},
-			//Default is 75px, set to 0 for demo so any distance triggers swipe
-			threshold:0
-		});
-		
-		swipe_blocks.swipe( {
-			//Single swipe handler for left swipes
-			swipeLeft:function(event, direction, distance, duration, fingerCount) {
-			  next_move()
-			},
-			//Default is 75px, set to 0 for demo so any distance triggers swipe
-			threshold:0
+			swipeRight:function(event, direction, distance, duration, fingerCount) {
+			  prev_move()
+			}
 		});
 		
 		

@@ -12,8 +12,24 @@
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
     
     <!-- main css --> 
-    <link href="css/style.css" rel="stylesheet" />
-         
+    <link href="css/style.css" rel="stylesheet"/>
+    <style type="text/css">
+        .CarouselFade {position: relative; margin: 50px 0;}
+        .main-slider {margin: 40px 0; padding: 0; list-style: none; text-align: center; position: relative; height: 100px; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; overflow: hidden; overflow-wrap: normal;  }
+        .main-slider .single {margin: 0; padding: 0 20px; list-style: none; display: inline-block; vertical-align: middle; }
+        .main-slider .single {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; /* Konqueror HTML */-moz-user-select: none; /* Firefox */-ms-user-select: none; user-select: none; }
+        .main-slider .fade-outer {position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; }
+        .main-slider .fade-outer:not(.active) {opacity: 0; visibility: hidden;}
+        .main-slider .fade-outer.active {visibility: visible; opacity: 1;}
+        .arrows {text-align: center;}
+        .arrows div {top: 0; cursor: pointer;  display: inline-block; vertical-align: top; margin: 10px;}
+        .arrows .left-arrow {position: static; left: -80px; }
+        .arrows .right-arrow {position: static; right: -80px; }
+        .dots {text-align: center;}
+        .dots span {display: inline-block; vertical-align: top; width: 40px; cursor: pointer; background-color: #eee; margin: 5px;}
+        .dots span.active {background-color: tomato;}
+    </style>
+              
 </head>
 <body>
 	<!-- start --> 
@@ -85,7 +101,7 @@
     <script src="js/jquery.touchSwipe.js"></script>
     
     <!-- general script --> 
-    <script src="js/CarouselFade.js"></script>
+    <script src="js/jquery.carouselFade.js"></script>
     
     <script type="text/javascript">
         $(document).ready(function(){

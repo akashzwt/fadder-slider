@@ -117,59 +117,6 @@ td { text-align: left; font-weight: normal; }
 #wrapper { width:100%; min-height:100%; }
 .container { max-width:1170px; width:100%; margin:0 auto; }
 
-/* header */
-header.main-header { width:100%; height:auto;}
-
-/* nav */
-nav.main-menu { width:100%; height:auto;}
-
-/* footer */
-footer.main-footer { width:100%; height:auto; }
-
-/*--------- home page ------------*/
-/* banner part */
-
-/* content part */
-
-/*--------- service page ------------*/
-/* we offer */
-
-/*--------- portfolio pages ------------*/
-/* portfolio-list page */
-
-
-
-
-
-
-
-
-
-
-.CarouselFade {position: relative; margin: 50px 0;}
-
-.main-slider {margin: 40px 0; padding: 0; list-style: none; text-align: center; position: relative; height: 100px; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; overflow: hidden; overflow-wrap: normal;  }
-.main-slider .single {margin: 0; padding: 0 20px; list-style: none; display: inline-block; vertical-align: middle; }
-.main-slider .single {-webkit-touch-callout: none; /* iOS Safari */-webkit-user-select: none; /* Safari */-khtml-user-select: none; /* Konqueror HTML */-moz-user-select: none; /* Firefox */-ms-user-select: none; /* Internet Explorer/Edge */user-select: none; /* Non-prefixed version, currentlysupported by Chrome and Opera */ }
-
-
-.main-slider .fade-outer {position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; }
-.main-slider .fade-outer:not(.active) {opacity: 0; visibility: hidden;}
-.main-slider .fade-outer.active {visibility: visible; opacity: 1;}
-
-
-.container {position: relative;}
-.arrows {text-align: center;}
-.arrows div {top: 0; cursor: pointer;  display: inline-block; vertical-align: top; margin: 10px;}
-.arrows .left-arrow {position: static; left: -80px; }
-.arrows .right-arrow {position: static; right: -80px; }
-
-
-.dots {text-align: center;}
-.dots span {display: inline-block; vertical-align: top; width: 40px; cursor: pointer; background-color: #eee; margin: 5px;}
-.dots span.active {background-color: tomato;}
-
-
 
 
 

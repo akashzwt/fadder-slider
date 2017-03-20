@@ -1,8 +1,7 @@
 $(function () {
     
     'use strict';
-	
-	
+    
 	$.fn.CarouselFade = function (options) {
 		// Default settings
         var settings = $.extend({

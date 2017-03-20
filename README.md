@@ -9,7 +9,7 @@ Multiple item Carousel Fade slider with responsive. Easy to build. Minor options
 <p>Example</p>
 <pre>
 &lt;div class="ClassName"&gt;
-  &lt;div class="main-slider"&gt;
+  &lt;div class="item-slider"&gt;
     &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
     &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
     &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;

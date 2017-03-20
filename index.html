@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Fade-Carousel</title>
+	<title>CarouselFade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
     <meta name="description" content="" /> 
@@ -15,19 +15,19 @@
     <link href="css/style.css" rel="stylesheet"/>
     <style type="text/css">
         .CarouselFade {position: relative; margin: 50px 0;}
-        .main-slider {margin: 40px 0; padding: 0; list-style: none; text-align: center; position: relative; height: 100px; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; overflow: hidden; overflow-wrap: normal;  }
-        .main-slider .single {margin: 0; padding: 0 20px; list-style: none; display: inline-block; vertical-align: middle; }
-        .main-slider .single {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; /* Konqueror HTML */-moz-user-select: none; /* Firefox */-ms-user-select: none; user-select: none; }
-        .main-slider .fade-outer {position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; }
-        .main-slider .fade-outer:not(.active) {opacity: 0; visibility: hidden;}
-        .main-slider .fade-outer.active {visibility: visible; opacity: 1;}
-        .arrows {text-align: center;}
-        .arrows div {top: 0; cursor: pointer;  display: inline-block; vertical-align: top; margin: 10px;}
-        .arrows .left-arrow {position: static; left: -80px; }
-        .arrows .right-arrow {position: static; right: -80px; }
-        .dots {text-align: center;}
-        .dots span {display: inline-block; vertical-align: top; width: 40px; cursor: pointer; background-color: #eee; margin: 5px;}
-        .dots span.active {background-color: tomato;}
+        .CarouselFade .item-slider {margin: 40px 0; padding: 0; list-style: none; text-align: center; position: relative; height: 100px; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; overflow: hidden; overflow-wrap: normal;  }
+        .CarouselFade .item-slider .single {margin: 0; padding: 0 20px; list-style: none; display: inline-block; vertical-align: middle; }
+        .CarouselFade .item-slider .single {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; /* Konqueror HTML */-moz-user-select: none; /* Firefox */-ms-user-select: none; user-select: none; }
+        .CarouselFade .item-slider .fade-outer {position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; }
+        .CarouselFade .item-slider .fade-outer:not(.active) {opacity: 0; visibility: hidden;}
+        .CarouselFade .item-slider .fade-outer.active {visibility: visible; opacity: 1;}
+        .CarouselFade .arrows {text-align: center;}
+        .CarouselFade .arrows div {top: 0; cursor: pointer;  display: inline-block; vertical-align: top; margin: 10px;}
+        .CarouselFade .arrows .left-arrow {position: static; left: -80px; }
+        .CarouselFade .arrows .right-arrow {position: static; right: -80px; }
+        .CarouselFade .dots {text-align: center;}
+        .CarouselFade .dots span {display: inline-block; vertical-align: top; width: 40px; height: 40px; line-height: 40px; cursor: pointer; background-color: #eee; margin: 5px; border-radius: 100%; background-color: #000; color: #fff;}
+        .CarouselFade .dots span.active {background-color: tomato;}
     </style>
               
 </head>
@@ -38,58 +38,65 @@
         <!-- content area part --> 
         <div id="content-area">
             <div class="container">
-                <div class="slider01">
-                    <div class="main-slider">
-                        <a href="#" class="single"><img src="images/brand-01.png"></a>
-                        <a href="#" class="single"><img src="images/brand-02.png"></a>
-                        <a href="#" class="single"><img src="images/brand-03.png"></a>
-                        <a href="#" class="single"><img src="images/brand-04.png"></a>
-                        <a href="#" class="single"><img src="images/brand-05.png"></a>
-                        <a href="#" class="single"><img src="images/brand-06.png"></a>
-                        <a href="#" class="single"><img src="images/brand-01.png"></a>
-                        <a href="#" class="single"><img src="images/brand-03.png"></a>
-                        <a href="#" class="single"><img src="images/brand-04.png"></a>
-                        <a href="#" class="single"><img src="images/brand-05.png"></a>
-                        <a href="#" class="single"><img src="images/brand-06.png"></a>
-                        <a href="#" class="single"><img src="images/brand-01.png"></a>
-                        <a href="#" class="single"><img src="images/brand-02.png"></a>
-                        <a href="#" class="single"><img src="images/brand-03.png"></a>
-                        <a href="#" class="single"><img src="images/brand-04.png"></a>
-                        <a href="#" class="single"><img src="images/brand-05.png"></a>
-                        <a href="#" class="single"><img src="images/brand-06.png"></a>
+                <section class="main">
+                    <div class="content">
+                        <h1>CarouselFade</h1>
+                        <hr>
+                        <h3>Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.</h3>
+                        <p>Here you can change location and structure of dots and arrows wherever and whatever name you want.
+    Manageable items in desktop as well as responsive with setting option. </p>
+                        <br>
+                       <h4><em><a href="https://github.com/akashzwt/CarouselFade" target="_blank">DOWNLOAD</a></em></h4>
                     </div>
-                    <div class="arrows">
-                        <div class="left-arrow">LEFT</div>
-                        <div class="right-arrow">RIGHT</div>
+                    <br><br>
+                    <div class="slider01">
+                        <div class="item-slider">
+                            <div class="single"><img src="images/demo1.jpg"></div>
+                            <div class="single"><img src="images/demo2.jpg"></div>
+                            <div class="single"><img src="images/demo3.jpg"></div>
+                            <div class="single"><img src="images/demo4.jpg"></div>
+                            <div class="single"><img src="images/demo5.jpg"></div>
+                            <div class="single"><img src="images/demo6.jpg"></div>
+                            <div class="single"><img src="images/demo7.jpg"></div>
+                            <div class="single"><img src="images/demo1.jpg"></div>
+                            <div class="single"><img src="images/demo2.jpg"></div>
+                            <div class="single"><img src="images/demo3.jpg"></div>
+                            <div class="single"><img src="images/demo4.jpg"></div>
+                            <div class="single"><img src="images/demo5.jpg"></div>
+                            <div class="single"><img src="images/demo6.jpg"></div>
+                            <div class="single"><img src="images/demo7.jpg"></div>
+                        </div>
+                        <div class="arrows">
+                            <div class="left-arrow">LEFT</div>
+                            <div class="right-arrow">RIGHT</div>
+                        </div>
+                        <div class="dots"></div>
                     </div>
-                    <div class="dots"></div>
-                </div>
-                <br><br>
-                <hr>
-                <br><br>
-                <div class="slider02">
-                    <div class="main-slider">
-                        <div class="single"><img src="images/brand-05.png"></div>
-                        <div class="single"><img src="images/brand-06.png"></div>
-                        <div class="single"><img src="images/brand-01.png"></div>
-                        <div class="single"><img src="images/brand-02.png"></div>
-                        <div class="single"><img src="images/brand-03.png"></div>
-                        <div class="single"><img src="images/brand-04.png"></div>
-                        <div class="single"><img src="images/brand-05.png"></div>
-                        <div class="single"><img src="images/brand-06.png"></div>
-                        <div class="single"><img src="images/brand-01.png"></div>
-                        <div class="single"><img src="images/brand-02.png"></div>
-                        <div class="single"><img src="images/brand-03.png"></div>
-                        <div class="single"><img src="images/brand-04.png"></div>
-                        <div class="single"><img src="images/brand-05.png"></div>
-                        <div class="single"><img src="images/brand-06.png"></div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="slider02">
+                        <div class="item-slider">
+                            <div class="single"><img src="images/demo1.jpg"></div>
+                            <div class="single"><img src="images/demo2.jpg"></div>
+                            <div class="single"><img src="images/demo3.jpg"></div>
+                            <div class="single"><img src="images/demo4.jpg"></div>
+                            <div class="single"><img src="images/demo5.jpg"></div>
+                            <div class="single"><img src="images/demo6.jpg"></div>
+                            <div class="single"><img src="images/demo7.jpg"></div>
+                            <div class="single"><img src="images/demo1.jpg"></div>
+                            <div class="single"><img src="images/demo2.jpg"></div>
+                            <div class="single"><img src="images/demo3.jpg"></div>
+                            <div class="single"><img src="images/demo4.jpg"></div>
+                        </div>
+                        <div class="arrows">
+                            <div class="left-arrow">LEFT</div>
+                            <div class="right-arrow">RIGHT</div>
+                        </div>
+                        <div class="dots"></div>
                     </div>
-                    <div class="arrows">
-                        <div class="left-arrow">LEFT</div>
-                        <div class="right-arrow">RIGHT</div>
-                    </div>
-                    <div class="dots"></div>
-                </div>
+                </section>
+                
             </div>
         </div>       
     </div>

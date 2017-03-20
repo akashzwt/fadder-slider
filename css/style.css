@@ -35,7 +35,7 @@ textarea:focus, input:focus, a, div, img { outline: none; }
 ------------------------------------------------------------------------------*/
 body { color:#000; font-size:16px; font-family: 'Lato', sans-serif; font-weight:400; line-height: 1.42857143; background-color: #fff; }
 h1, h2, h3, h4, h5, h6 { margin-bottom:15px; font-weight:normal; }
-h1 { font-size:24px; line-height: 27px; font-weight:700; text-transform:uppercase; margin-top:35px; }
+h1 { font-size:24px;  font-weight:700; }
 h2 { font-size:22px; font-weight:700; }
 h3 { font-size:20px; font-weight:700; }
 h4 { font-size:18px; }
@@ -59,10 +59,10 @@ img { border:none; border-style: none; vertical-align:top; height: auto;}
 
 /* 4. Link
 ------------------------------------------------------------------------------*/
-a { color:#fff; }
+/*a { color:#fff; }
 a:hover { color:#346300; text-decoration: underline; }
 a:active, a.current { color: #346300; }
-a:focus { outline: none; }
+a:focus { outline: none; }*/
 
 /* 5. Forms
 ------------------------------------------------------------------------------*/
@@ -117,9 +117,9 @@ td { text-align: left; font-weight: normal; }
 #wrapper { width:100%; min-height:100%; }
 .container { max-width:1170px; width:100%; margin:0 auto; }
 
-
-
-
+.main {text-align: center; padding: 40px 20px;}
+.main .content {background-color: #eee; padding: 20px 40px;}
+.main .content h1 {margin: 10px 0 10px;}
 
 
 

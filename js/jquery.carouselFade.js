@@ -101,7 +101,7 @@ $(function () {
 		
 		function ul_height(){
 			var my_height = $this.find('.fade-outer.active').height();
-			$this.find('.main-slider').css('height',my_height);	
+			$this.find('.item-slider').css('height',my_height);	
 		}
 		setTimeout(function(){
 			ul_height();

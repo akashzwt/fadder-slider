@@ -13,22 +13,7 @@
     
     <!-- main css --> 
     <link href="css/style.css" rel="stylesheet"/>
-    <style type="text/css">
-        .CarouselFade {position: relative; margin: 50px 0;}
-        .CarouselFade .item-slider {margin: 40px 0; padding: 0; list-style: none; text-align: center; position: relative; height: 100px; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; overflow: hidden; overflow-wrap: normal;  }
-        .CarouselFade .item-slider .single {margin: 0; padding: 0 20px; list-style: none; display: inline-block; vertical-align: middle; }
-        .CarouselFade .item-slider .single {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; /* Konqueror HTML */-moz-user-select: none; /* Firefox */-ms-user-select: none; user-select: none; }
-        .CarouselFade .item-slider .fade-outer {position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s; }
-        .CarouselFade .item-slider .fade-outer:not(.active) {opacity: 0; visibility: hidden;}
-        .CarouselFade .item-slider .fade-outer.active {visibility: visible; opacity: 1;}
-        .CarouselFade .arrows {text-align: center;}
-        .CarouselFade .arrows div {top: 0; cursor: pointer;  display: inline-block; vertical-align: top; margin: 10px;}
-        .CarouselFade .arrows .left-arrow {position: static; left: -80px; }
-        .CarouselFade .arrows .right-arrow {position: static; right: -80px; }
-        .CarouselFade .dots {text-align: center;}
-        .CarouselFade .dots span {display: inline-block; vertical-align: top; width: 40px; height: 40px; line-height: 40px; cursor: pointer; background-color: #eee; margin: 5px; border-radius: 100%; background-color: #000; color: #fff;}
-        .CarouselFade .dots span.active {background-color: tomato;}
-    </style>
+    <link href="css/carouselFade.css" rel="stylesheet"/>
               
 </head>
 <body>
@@ -42,11 +27,13 @@
                     <div class="content">
                         <h1>CarouselFade</h1>
                         <hr>
-                        <h3>Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.</h3>
-                        <p>Here you can change location and structure of dots and arrows wherever and whatever name you want.
-    Manageable items in desktop as well as responsive with setting option. </p>
                         <br>
-                       <h4><em><a href="https://github.com/akashzwt/CarouselFade" target="_blank">DOWNLOAD</a></em></h4>
+                        <h3>Multiple item Carousel Fade slider with responsive.<br> Less options. Easy to build.</h3>
+                        <p>Here you can change location and structure of dots and arrows wherever and whatever name you want.
+    <br>Manageable items in desktop as well as responsive with setting option. </p>
+                        <br>
+                        <a class="link" href="https://github.com/akashzwt/CarouselFade" target="_blank"><em><svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>View On Github</em></a>
+                        <p></p>
                     </div>
                     <br><br>
                     <div class="slider01">
@@ -95,6 +82,61 @@
                         </div>
                         <div class="dots"></div>
                     </div>
+                    <br>
+                    <br>
+                    <div class="content-desc">
+                        <h2>Description</h2>
+                        <p>Here you can change location and structure of dots and arrows wherever and whatever name you want. Manageable items in desktop as well as responsive with setting option. </p>
+                        
+                        <br>
+                        <h4>CSS</h4>
+                        <pre>
+&lt;link rel=<span class="orange">"stylesheet"</span> type=<span class="orange">"text/css"</span> href=<span class="orange">"//carouselFade.css"</span>/&gt;
+                        </pre>
+                        <h4>Javascripts</h4>
+                        <pre>
+&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;
+&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.touchSwipe.js"</span>&gt;&lt;/script&gt;
+&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.carouselFade.js"</span>&gt;&lt;/script&gt;
+                        </pre>
+                        <div>
+                        <h4>Example</h4>
+                        <pre>
+&lt;div class=<span class="orange">"ClassName"</span>&gt;
+    &lt;div class=<span class="orange">"item-slider"</span>&gt;
+        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=<span class="orange">"arrows"</span>&gt;
+        &lt;div class=<span class="orange">"left-arrow"</span>&gt;LEFT&lt;/div&gt;
+        &lt;div class=<span class="orange">"right-arrow"</span>&gt;RIGHT&lt;/div&gt;
+    &lt;/div/&gt;
+    &lt;div class=<span class="orange">"dots"</span>&gt;&lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                        </div>
+                        <h4>Settings</h4>
+                        <p>Here you can set your responsive screen also. And also set items for that screen viewport.  </p>
+                        <pre>
+$(document).ready(function(){   
+    $(<span class="orange">".ClassName"</span>).CarouselFade({
+        // options...
+        <span class="purple">desktopItem</span> : 8,  <span class="grey">//Greater than 1024</span>  
+        <span class="purple">tabletItem</span> : 6,  <span class="grey">//1023 to 768</span>  
+        <span class="purple">bigMobileItem</span> : 4, <span class="grey">//768 to 420</span>  
+        <span class="purple">mobileItem</span> : 2, <span class="grey">//420 to 0</span>  
+        <span class="purple">tabletScreen</span> : 1024,
+        <span class="purple">bigMobileScreen</span> : 768,
+        <span class="purple">mobileScreen</span> : 420,
+        <span class="purple">autoplayTime</span> : 3000 <span class="grey">//autoplay speed in milisecond</span>
+    }); 
+}); 
+                        </pre>
+                    </div>
                 </section>
                 
             </div>
@@ -114,7 +156,7 @@
         $(document).ready(function(){
             
             $('.slider01').CarouselFade({
-                desktopItem : 6,
+                desktopItem : 6,  
                 tabletItem : 4,
                 bigMobileItem : 3,
                 mobileItem : 1,

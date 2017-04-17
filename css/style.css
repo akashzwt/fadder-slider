@@ -35,7 +35,7 @@ textarea:focus, input:focus, a, div, img { outline: none; }
 ------------------------------------------------------------------------------*/
 body { color:#000; font-size:16px; font-family: 'Lato', sans-serif; font-weight:400; line-height: 1.42857143; background-color: #fff; }
 h1, h2, h3, h4, h5, h6 { margin-bottom:15px; font-weight:normal; }
-h1 { font-size:24px;  font-weight:700; }
+h1 { font-size:30px;  font-weight:700; }
 h2 { font-size:22px; font-weight:700; }
 h3 { font-size:20px; font-weight:700; }
 h4 { font-size:18px; }
@@ -121,7 +121,22 @@ td { text-align: left; font-weight: normal; }
 .main .content {background-color: #eee; padding: 20px 40px;}
 .main .content h1 {margin: 10px 0 10px;}
 
+.content-desc {text-align: left; background-color: #eee; padding: 40px 80px;}
 
+
+pre {display: inline-block; vertical-align: top; padding: 20px 40px 10px; background-color: #fff; margin: 0 0 40px; border: 3px double #00DBB5; line-height: 1.1;}
+
+span.orange {color: #e88555;}
+span.purple {color: #b47aad;}
+span.grey {color: #b7b7b7;}
+
+a.link { display: inline-block; vertical-align: top; padding: 0; background-color: #fff; margin: 0; border: 3px double #00DBB5; color: #000; font-size: 18px; height: 70px; line-height: 68px; width: 220px; text-align: center; text-decoration: none; -webkit-transition:  all 0.3s ease 0s;  transition: all 0.3s ease 0s;}
+a.link:hover { transform: scale(1.1); background-color: #00DBB5; color: #fff;}
+a.link svg {vertical-align: middle; margin: -6px 8px 0 0;}
+
+
+
+.token.string { color: #e74c3c;}
 
 
 

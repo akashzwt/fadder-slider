@@ -1,5 +1,6 @@
 # Fadder Slider
-Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.
+<h2>The Multiple Carousel Fade slider</h2>
+<h3>Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.</h3>
 <p><em><strong>the carousel for simply fade with responsive</strong></em></p>
 <h4>Demo</h4>
 <p><a href="#">UPCOMING</a></p>

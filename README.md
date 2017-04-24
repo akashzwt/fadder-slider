@@ -1,10 +1,10 @@
-# Fadder
+# Fadder Slider
 Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.
 <p><em><strong>the carousel for simply fade with responsive</strong></em></p>
 <h4>Demo</h4>
 <p><a href="#">UPCOMING</a></p>
 <h4>Description</h4>
-<p>Here you can change location and structure of dots and arrows wherever and whatever name you want. <br>Manageable items in desktop as well as responsive with setting option. </p>
+<p>Fadder Slider, Here you can change location and structure of dots and arrows wherever and whatever name you want. <br>Manageable items in desktop as well as responsive with setting option. </p>
 <div>
 <p>Example</p>
 <pre>

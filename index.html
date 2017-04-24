@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>CarouselFade</title>
+	<title>Fadder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
     <meta name="description" content="" /> 
@@ -13,7 +13,7 @@
     
     <!-- main css --> 
     <link href="css/style.css" rel="stylesheet"/>
-    <link href="css/carouselFade.css" rel="stylesheet"/>
+    <link href="css/fadder.css" rel="stylesheet"/>
               
 </head>
 <body>
@@ -25,7 +25,8 @@
             <div class="container">
                 <section class="main">
                     <div class="content">
-                        <h1>CarouselFade</h1>
+                        <h1>fadder</h1>
+                        <h3>The CarouselFade slider</h3>
                         <hr>
                         <br>
                         <h3>Multiple item Carousel Fade slider with responsive.<br> Less options. Easy to build.</h3>
@@ -91,13 +92,13 @@
                         <br>
                         <h4>CSS</h4>
                         <pre>
-&lt;link rel=<span class="orange">"stylesheet"</span> type=<span class="orange">"text/css"</span> href=<span class="orange">"//carouselFade.css"</span>/&gt;
+&lt;link rel=<span class="orange">"stylesheet"</span> type=<span class="orange">"text/css"</span> href=<span class="orange">"//fadder.css"</span>/&gt;
                         </pre>
                         <h4>Javascripts</h4>
                         <pre>
 &lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;
 &lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.touchSwipe.js"</span>&gt;&lt;/script&gt;
-&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.carouselFade.js"</span>&gt;&lt;/script&gt;
+&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.fadder.js"</span>&gt;&lt;/script&gt;
                         </pre>
                         <div>
                         <h4>Example</h4>
@@ -123,7 +124,7 @@
                         <p>Here you can set your responsive screen also. And also set items for that screen viewport.  </p>
                         <pre>
 $(document).ready(function(){   
-    $(<span class="orange">".ClassName"</span>).CarouselFade({
+    $(<span class="orange">".ClassName"</span>).fadder({
         // options...
         <span class="purple">desktopItem</span> : 8,  <span class="grey">//Greater than 1024</span>  
         <span class="purple">tabletItem</span> : 6,  <span class="grey">//1023 to 768</span>  
@@ -150,12 +151,12 @@ $(document).ready(function(){
     <script src="js/jquery.touchSwipe.js"></script>
     
     <!-- general script --> 
-    <script src="js/jquery.carouselFade.js"></script>
+    <script src="js/jquery.fadder.js"></script>
     
     <script type="text/javascript">
         $(document).ready(function(){
             
-            $('.slider01').CarouselFade({
+            $('.slider01').fadder({
                 desktopItem : 6,  
                 tabletItem : 4,
                 bigMobileItem : 3,
@@ -165,7 +166,7 @@ $(document).ready(function(){
                 mobileScreen : 420,
                 autoplayTime : 3000
             });  
-            $('.slider02').CarouselFade({
+            $('.slider02').fadder({
                 desktopItem : 5,
                 tabletItem : 4,
                 bigMobileItem : 3,

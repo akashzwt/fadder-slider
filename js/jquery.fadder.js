@@ -3,7 +3,7 @@ $(function () {
     
     'use strict';
     
-	$.fn.CarouselFade = function (options) {
+	$.fn.fadder = function (options) {
 		// Default settings
         var settings = $.extend({
             desktopItem : 8,
@@ -18,7 +18,7 @@ $(function () {
 		
 		var $this = $(this);
 		
-		var $outer_class = $this.addClass('CarouselFade');
+		var $outer_class = $this.addClass('fadder');
 			
 		function wrapEvery(num, wrapper) {
 			
@@ -233,7 +233,7 @@ $(function () {
 		});
 		
 		
-		$('.CarouselFade img').on('mousedown', function(e) {
+		$('.fadder img').on('mousedown', function(e) {
 			e.preventDefault();
 		});
 		

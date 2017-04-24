@@ -1,4 +1,4 @@
-# CarouselFade
+# Fadder
 Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.
 <p><em><strong>the carousel for simply fade with responsive</strong></em></p>
 <h4>Demo</h4>
@@ -29,7 +29,7 @@ Multiple item Carousel Fade slider with responsive. Easy to build. Minor options
 <p>Here you can set your responsive screen also. And also set items for that screen viewport.  </p>
 <pre>
 $(document).ready(function(){   
-  $('.ClassName').CarouselFade({
+  $('.ClassName').fadder({
     // options...
     desktopItem : 8,  //Greater than 1024  
     tabletItem : 6,  //1023 to 768  

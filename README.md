@@ -5,7 +5,7 @@
 <h4>Demo</h4>
 <p><a href="#">UPCOMING</a></p>
 <h4>Description</h4>
-<p>Fadder Slider, Here you can change position and structure of dots and arrows wherever and whatever name you want. <br>Manageable items in desktop as well as responsive with setting option.</p>
+<p>Fadder Slider, Here you can setting of dots and arrows. <br>Manageable items in desktop as well as responsive with setting option.</p>
 <div>
 <p>Example</p>
 <pre>
@@ -18,16 +18,11 @@
         &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
         &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="arrows"&gt;
-        &lt;div class="left-arrow"&gt;LEFT&lt;/div&gt;
-        &lt;div class="right-arrow"&gt;RIGHT&lt;/div&gt;
-    &lt;/div/&gt;
-    &lt;div class="dots"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 </div>
 <h4>Settings</h4>
-<p>Here you can set your responsive screen also. And also set items for that screen viewport.  </p>
+<p>Here you can set your responsive screen also. And also set items for that screen viewport. <br>Following shows the <strong>default options</strong> for Fadder. </p>  </p>
 <pre>
 $(document).ready(function(){   
     $('.ClassName').fadder({
@@ -39,7 +34,9 @@ $(document).ready(function(){
         tabletScreen : 1024,
         bigMobileScreen : 768,
         mobileScreen : 420,
-        autoplayTime : 3000 //autoplay speed in milisecond
+        autoplayTime : 3000, //autoplay speed in milisecond
+        dots : true, //true or false
+        arrows : true, //true or false
     }); 
 }); 
 </pre>

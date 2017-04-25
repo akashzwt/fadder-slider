@@ -1,3 +1,14 @@
+/*!
+ * Fadder - jQuery Plugin
+ * version: 1.0.0 (Sat, 18 Mar 2017)
+ * @requires jQuery v1.9 or later
+ *
+ * Examples at ##
+ * License: ##
+ *
+ * Copyright 2017 
+ *
+ */
 
 $(function () {
     
@@ -13,7 +24,9 @@ $(function () {
 			tabletScreen : 1024,
 			bigMobileScreen : 768,
 			mobileScreen : 640,
-			autoplayTime : 5000
+			autoplayTime : 5000,
+            dots : true,
+            arrows : true,
         },options);
 		
 		var $this = $(this);
@@ -153,9 +166,9 @@ $(function () {
 
 		start_interval();
 
-		
-		
 		function sliderDots() {
+            var $dots = $( "<div class='dots'></div>" );
+            $this.append($dots);
 			$this.find( ".dots" ).empty();
 			var items = $this.find('.single');
 			var all_length = $this.find('.fade-outer').length;
@@ -171,15 +184,25 @@ $(function () {
 		};
 		sliderDots();
 		
+        var $dots_show = $this.find(".dots");
+        if(settings.dots == true){
+            $dots_show.css({
+				"display": 'block',
+			});
+        }
+        else {
+            $dots_show.css({
+				"display": 'none',
+			});
+        }
+        
 		var lightbox_resize2 = false;
 		var windowWidth2 = $(window).width();
 		$(window).resize(function() {
 			if ($(window).width() != windowWidth2) {
 
-				// Update the window width for next time
 				windowWidth2 = $(window).width();
 
-				// Do stuff here
 				if (lightbox_resize2)
 					clearTimeout(lightbox_resize2);
 				lightbox_resize2 = setTimeout(function() {
@@ -212,7 +235,26 @@ $(function () {
 
 		
 		/*----------------------------------------------------------------*/
-		
+		var $arrows = $( "<div class='arrows'></div>" ),
+            $left_arrow = $( "<div class='left-arrow'>LEFT</div>" ),
+            $right_arrow = $( "<div class='right-arrow'>RIGHT</div>" );
+            
+            $this.append($arrows);
+            $this.find($arrows).append($left_arrow)
+            $this.find($arrows).append($right_arrow)
+            
+        var $arrow_show = $this.find(".arrows");
+        if(settings.arrows == true){
+            $arrow_show.css({
+				"display": 'block',
+			});
+        }
+        else {
+            $arrow_show.css({
+				"display": 'none',
+			});
+        }
+        
 		$this.find('.arrows .right-arrow').click(function(){
 			next_move()
 		})
@@ -231,7 +273,6 @@ $(function () {
 			  prev_move()
 			}
 		});
-		
 		
 		$('.fadder img').on('mousedown', function(e) {
 			e.preventDefault();

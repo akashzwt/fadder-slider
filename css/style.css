@@ -114,6 +114,7 @@ td { text-align: left; font-weight: normal; }
 .dis-table-cell { display:table-cell; vertical-align:middle }
 
 /* main container */
+* {overflow-wrap: break-word;}
 #wrapper { width:100%; min-height:100%; }
 .container { max-width:1170px; width:100%; margin:0 auto; }
 
@@ -124,7 +125,7 @@ td { text-align: left; font-weight: normal; }
 .content-desc {text-align: left; background-color: #eee; padding: 40px 80px;}
 
 
-pre {display: inline-block; vertical-align: top; padding: 20px 40px 10px; background-color: #fff; margin: 0 0 40px; border: 3px double #00DBB5; line-height: 1.1;}
+pre {display: inline-block; vertical-align: top; padding: 20px 40px 10px; background-color: #fff; margin: 0 0 40px; border: 3px double #00DBB5; line-height: 1.1; max-width: 100%; overflow-wrap: break-word; overflow-x: auto;}
 
 span.orange {color: #e88555;}
 span.purple {color: #b47aad;}
@@ -139,6 +140,15 @@ a.link svg {vertical-align: middle; margin: -6px 8px 0 0;}
 .token.string { color: #e74c3c;}
 
 
+@media (max-width: 767px) {
+    .content-desc {
+      padding: 20px;
+    }
+    pre {
+      margin: 0 0 20px;
+      padding: 20px 15px 10px;
+    }
+}
 
 
 

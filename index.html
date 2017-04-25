@@ -54,11 +54,6 @@
                             <div class="single"><img src="images/demo6.jpg"></div>
                             <div class="single"><img src="images/demo7.jpg"></div>
                         </div>
-                        <div class="arrows">
-                            <div class="left-arrow">LEFT</div>
-                            <div class="right-arrow">RIGHT</div>
-                        </div>
-                        <div class="dots"></div>
                     </div>
                     <br>
                     <hr>
@@ -77,11 +72,6 @@
                             <div class="single"><img src="images/demo3.jpg"></div>
                             <div class="single"><img src="images/demo4.jpg"></div>
                         </div>
-                        <div class="arrows">
-                            <div class="left-arrow">LEFT</div>
-                            <div class="right-arrow">RIGHT</div>
-                        </div>
-                        <div class="dots"></div>
                     </div>
                     <br>
                     <br>
@@ -112,16 +102,11 @@
         &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
         &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=<span class="orange">"arrows"</span>&gt;
-        &lt;div class=<span class="orange">"left-arrow"</span>&gt;LEFT&lt;/div&gt;
-        &lt;div class=<span class="orange">"right-arrow"</span>&gt;RIGHT&lt;/div&gt;
-    &lt;/div/&gt;
-    &lt;div class=<span class="orange">"dots"</span>&gt;&lt;/div&gt;
 &lt;/div&gt;
                         </pre>
                         </div>
                         <h4>Settings</h4>
-                        <p>Here you can set your responsive screen also. And also set items for that screen viewport.  </p>
+                        <p>Here you can set your responsive screen also. And also set items for that screen viewport. <br>Following shows the <strong>default options</strong> for Fadder. </p>
                         <pre>
 $(document).ready(function(){   
     $(<span class="orange">".ClassName"</span>).fadder({
@@ -133,7 +118,9 @@ $(document).ready(function(){
         <span class="purple">tabletScreen</span> : 1024,
         <span class="purple">bigMobileScreen</span> : 768,
         <span class="purple">mobileScreen</span> : 420,
-        <span class="purple">autoplayTime</span> : 3000 <span class="grey">//autoplay speed in milisecond</span>
+        <span class="purple">autoplayTime</span> : 3000, <span class="grey">//autoplay speed in milisecond</span>
+        <span class="purple">dots</span> : true, <span class="grey">//true or false</span>
+        <span class="purple">arrows</span> : true <span class="grey">//true or false</span>
     }); 
 }); 
                         </pre>
@@ -164,7 +151,9 @@ $(document).ready(function(){
                 tabletScreen : 1024,
                 bigMobileScreen : 768,
                 mobileScreen : 420,
-                autoplayTime : 3000
+                autoplayTime : 3000,
+                dots : false,
+                arrows : true,
             });  
             $('.slider02').fadder({
                 desktopItem : 5,
@@ -174,7 +163,9 @@ $(document).ready(function(){
                 tabletScreen : 1024,
                 bigMobileScreen : 768,
                 mobileScreen : 640,
-                autoplayTime : 5000
+                autoplayTime : 5000,
+                dots : true,  
+                arrows : false,
             });  
             
         })

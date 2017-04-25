@@ -41,6 +41,6 @@ $(document).ready(function(){
 }); 
 </pre>
 <h4>Browser support</h4>
-<p>Works on  modern browsers such as Chrome, Firefox, and Safari</p>
+<p>Works on  modern browsers such as Chrome, Firefox, and Safari. Also works in devices</p>
 <h4>Dependencies</h4>
 <p>jQuery 1.9 <br> jQuery touchSwipe</p>

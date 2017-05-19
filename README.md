@@ -3,7 +3,7 @@ A jQuery plugin to be used on touch devices such as iPad, iPhone, Android etc.
 
 Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.
 
-Carousel for simply fade with responsive.
+Carousel for simply <strong>fade</strong> with responsive.
 
 Fadder Slider, Here you can setting of dots and arrows. <br>
 Manageable items in desktop as well as responsive with setting option.
@@ -23,9 +23,10 @@ Manageable items in desktop as well as responsive with setting option.
 </div>
 ````
 
-## Settings
+### Settings
 Here you can set your responsive screen also. And also set items for that screen viewport.<br> 
-Following shows the for Fadder. 
+Following shows the default options for Fadder. 
+
 ````javascript
 $(document).ready(function(){   
     $('.ClassName').fadder({
@@ -45,7 +46,7 @@ $(document).ready(function(){
 ````
 
 ### Browser support:
-* Works on  modern browsers such as Chrome, Firefox, and Safari
+* Works on modern browsers such as Chrome, Firefox, and Safari
 
 ### Dependencies:
 * jQuery 1.9

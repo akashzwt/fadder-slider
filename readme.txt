@@ -8,6 +8,7 @@ Multiple item Carousel Fade slider with responsive. Easy to build. Minor options
 <div>
 <p>Example</p>
 <pre>
+<code>
 &lt;div class="ClassName"&gt;
   &lt;div class="item-slider"&gt;
     &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
@@ -23,11 +24,13 @@ Multiple item Carousel Fade slider with responsive. Easy to build. Minor options
   &lt;/div/&gt;
   &lt;div class="dots"&gt;&lt;/div&gt;
 &lt;/div&gt;
+</code>
 </pre>
 </div>
 <h4>Settings</h4>
 <p>Here you can set your responsive screen also. And also set items for that screen viewport.  </p>
 <pre>
+<code>
 $(document).ready(function(){   
   $('.ClassName').CarouselFade({
     // options...
@@ -41,6 +44,7 @@ $(document).ready(function(){
     autoplayTime : 3000 //autoplay speed in milisecond
   }); 
 }); 
+</code>
 </pre>
 <h4>Browser support</h4>
 <p>Works on  modern browsers such as Chrome, Firefox, and Safari</p>

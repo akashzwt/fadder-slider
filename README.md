@@ -1,32 +1,31 @@
 # Fadder Slider
-<h2>The Multiple Carousel Fade slider</h2>
-<h3>Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.</h3>
-<p><em><strong>the carousel for simply fade with responsive</strong></em></p>
-<h4>Demo</h4>
-<p><a href="#">UPCOMING</a></p>
-<h4>Description</h4>
-<p>Fadder Slider, Here you can setting of dots and arrows. <br>Manageable items in desktop as well as responsive with setting option.</p>
-<div>
-<p>Example</p>
-<pre>
-<code>
-&lt;div class="ClassName"&gt;
-    &lt;div class="item-slider"&gt;
-        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+A jQuery plugin to be used on touch devices such as iPad, iPhone, Android etc.
+
+Multiple item Carousel Fade slider with responsive. Easy to build. Minor options.
+
+Carousel for simply fade with responsive.
+
+Fadder Slider, Here you can setting of dots and arrows. <br>Manageable items in desktop as well as responsive with setting option.
+
+
+### Example
+````html
+<div class="ClassName">
+    <div class="item-slider">
+        <div class="single"><img href="path"></div>
+        <div class="single"><img href="path"></div>
+        <div class="single"><img href="path"></div>
+        <div class="single"><img href="path"></div>
+        <div class="single"><img href="path"></div>
+        <div class="single"><img href="path"></div>
+    </div>
 </div>
-<h4>Settings</h4>
-<p>Here you can set your responsive screen also. And also set items for that screen viewport. <br>Following shows the <strong>default options</strong> for Fadder. </p>  </p>
-<pre>
-<code>
+````
+
+## Settings
+Here you can set your responsive screen also. And also set items for that screen viewport. 
+Following shows the for Fadder. 
+````javascript
 $(document).ready(function(){   
     $('.ClassName').fadder({
         // options...
@@ -41,10 +40,9 @@ $(document).ready(function(){
         dots : true, //true or false
         arrows : true, //true or false
     }); 
-}); 
-</code>
-</pre>
-<h4>Browser support</h4>
-<p>Works on  modern browsers such as Chrome, Firefox, and Safari. Also works in devices</p>
-<h4>Dependencies</h4>
-<p>jQuery 1.9 <br> jQuery touchSwipe</p>
+});
+````
+
+### Browser support:
+Here you can set your responsive screen also. And also set items for that screen viewport.
+Following shows the for Fadder.

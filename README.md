@@ -9,6 +9,7 @@
 <div>
 <p>Example</p>
 <pre>
+<code>
 &lt;div class="ClassName"&gt;
     &lt;div class="item-slider"&gt;
         &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
@@ -19,11 +20,13 @@
         &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+</code>
 </pre>
 </div>
 <h4>Settings</h4>
 <p>Here you can set your responsive screen also. And also set items for that screen viewport. <br>Following shows the <strong>default options</strong> for Fadder. </p>  </p>
 <pre>
+<code>
 $(document).ready(function(){   
     $('.ClassName').fadder({
         // options...
@@ -39,6 +42,7 @@ $(document).ready(function(){
         arrows : true, //true or false
     }); 
 }); 
+</code>
 </pre>
 <h4>Browser support</h4>
 <p>Works on  modern browsers such as Chrome, Firefox, and Safari. Also works in devices</p>

@@ -5,7 +5,8 @@ Multiple item Carousel Fade slider with responsive. Easy to build. Minor options
 
 Carousel for simply fade with responsive.
 
-Fadder Slider, Here you can setting of dots and arrows. <br>Manageable items in desktop as well as responsive with setting option.
+Fadder Slider, Here you can setting of dots and arrows. <br>
+Manageable items in desktop as well as responsive with setting option.
 
 
 ### Example
@@ -23,7 +24,7 @@ Fadder Slider, Here you can setting of dots and arrows. <br>Manageable items in 
 ````
 
 ## Settings
-Here you can set your responsive screen also. And also set items for that screen viewport. 
+Here you can set your responsive screen also. And also set items for that screen viewport.<br> 
 Following shows the for Fadder. 
 ````javascript
 $(document).ready(function(){   
@@ -44,5 +45,8 @@ $(document).ready(function(){
 ````
 
 ### Browser support:
-Here you can set your responsive screen also. And also set items for that screen viewport.
-Following shows the for Fadder.
+* Works on  modern browsers such as Chrome, Firefox, and Safari
+
+### Dependencies:
+* jQuery 1.9
+* jQuery touchSwipe

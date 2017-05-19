@@ -102,7 +102,6 @@ $(function () {
 				if (lightbox_resize)
 					clearTimeout(lightbox_resize);
 				lightbox_resize = setTimeout(function() {
-					console.log('resize');
 					wrapItems()
 				}, 200);
 			}
@@ -165,11 +164,16 @@ $(function () {
 		}
 
 		start_interval();
-
-		function sliderDots() {
+        
+        function make_dots(){
             var $dots = $( "<div class='dots'></div>" );
             $this.append($dots);
 			$this.find( ".dots" ).empty();
+        }
+        make_dots();
+
+		function sliderDots() {
+            $this.find( ".dots" ).empty();
 			var items = $this.find('.single');
 			var all_length = $this.find('.fade-outer').length;
 			
@@ -223,7 +227,6 @@ $(function () {
 		});
 		
 		$this.find( ".dots span").on('click', function(event){
-		
 			event.preventDefault();
 			var dot_num = $(this).index();
 			$(this).addClass('active').siblings().removeClass('active');
@@ -232,9 +235,9 @@ $(function () {
 			clearInterval(timer);
 			start_interval();
 		});
-
 		
 		/*----------------------------------------------------------------*/
+        
 		var $arrows = $( "<div class='arrows'></div>" ),
             $left_arrow = $( "<div class='left-arrow'>LEFT</div>" ),
             $right_arrow = $( "<div class='right-arrow'>RIGHT</div>" );

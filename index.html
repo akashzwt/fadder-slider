@@ -13,6 +13,7 @@
     
     <!-- main css --> 
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/tomorrow.css" rel="stylesheet"/>
     <link href="css/fadder.css" rel="stylesheet"/>
               
 </head>
@@ -29,7 +30,7 @@
                         <h2>The Multiple Carousel Fade slider</h2>
                         <hr>
                         <br>
-                        <h3>Multiple item Carousel Fade slider with responsive.<br> Less options. Easy to build.</h3>
+                        <h4>Multiple item Carousel Fade slider with responsive. Less options. Easy to build.</h4>
                         <p>Here you can change location and structure of dots and arrows wherever and whatever name you want.
     <br>Manageable items in desktop as well as responsive with setting option. </p>
                         <br>
@@ -80,49 +81,60 @@
                         <p>Here you can change location and structure of dots and arrows wherever and whatever name you want. Manageable items in desktop as well as responsive with setting option. </p>
                         
                         <br>
-                        <h4>CSS</h4>
+                        <h5>CSS</h5>
                         <pre>
-&lt;link rel=<span class="orange">"stylesheet"</span> type=<span class="orange">"text/css"</span> href=<span class="orange">"//fadder.css"</span>/&gt;
+                            <code>
+&lt;link rel="stylesheet" href="//fadder.css" /&gt;
+                            </code>
                         </pre>
-                        <h4>Javascripts</h4>
+                        
+                        <h5>Javascripts</h5>
                         <pre>
-&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery-1.9.1.min.js"</span>&gt;&lt;/script&gt;
-&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.touchSwipe.js"</span>&gt;&lt;/script&gt;
-&lt;script type=<span class="orange">"text/javascript"</span> src=<span class="orange">"//jquery.fadder.js"</span>&gt;&lt;/script&gt;
+                            <code>
+&lt;script src="//jquery-1.9.1.min.js"&gt; &lt;/script&gt;
+&lt;script src="//jquery.touchSwipe.js"&gt; &lt;/script&gt;
+&lt;script src="//jquery.fadder.js"&gt; &lt;/script&gt;
+                            </code>
                         </pre>
+                        
                         <div>
-                        <h4>Example</h4>
+                        <h5>Example</h5>
                         <pre>
-&lt;div class=<span class="orange">"ClassName"</span>&gt;
-    &lt;div class=<span class="orange">"item-slider"</span>&gt;
-        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
-        &lt;div class=<span class="orange">"single"</span>&gt;&lt;img href="path"&gt;&lt;/div&gt;
+                            <code>
+&lt;div class="ClassName"&gt;
+    &lt;div class="item-slider"&gt;
+        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
+        &lt;div class="single"&gt;&lt;img href="path"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+                            </code>
                         </pre>
+                            
                         </div>
-                        <h4>Settings</h4>
+                        <h5>Settings</h5>
                         <p>Here you can set your responsive screen also. And also set items for that screen viewport. <br>Following shows the <strong>default options</strong> for Fadder. </p>
                         <pre>
+                            <code>
 $(document).ready(function(){   
-    $(<span class="orange">".ClassName"</span>).fadder({
+    $(".ClassName").fadder({
         // options...
-        <span class="purple">desktopItem</span> : 8,  <span class="grey">//Greater than 1024</span>  
-        <span class="purple">tabletItem</span> : 6,  <span class="grey">//1023 to 768</span>  
-        <span class="purple">bigMobileItem</span> : 4, <span class="grey">//768 to 420</span>  
-        <span class="purple">mobileItem</span> : 2, <span class="grey">//420 to 0</span>  
-        <span class="purple">tabletScreen</span> : 1024,
-        <span class="purple">bigMobileScreen</span> : 768,
-        <span class="purple">mobileScreen</span> : 420,
-        <span class="purple">autoplayTime</span> : 3000, <span class="grey">//autoplay speed in milisecond</span>
-        <span class="purple">dots</span> : true, <span class="grey">//true or false</span>
-        <span class="purple">arrows</span> : true <span class="grey">//true or false</span>
+        desktopItem : 8, //Greater than 1024  
+        tabletItem : 6, //1023 to 768  
+        bigMobileItem : 4, //768 to 420  
+        mobileItem : 2, //420 to 0  
+        tabletScreen : 1024,
+        bigMobileScreen : 768,
+        mobileScreen : 420,
+        autoplayTime : 3000, //autoplay speed in milisecond
+        dots : true, //true or false
+        arrows : true //true or false
     }); 
-}); 
+});
+                            </code>
                         </pre>
                     </div>
                 </section>
@@ -136,6 +148,11 @@ $(document).ready(function(){
     <!-- main script --> 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.touchSwipe.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
     
     <!-- general script --> 
     <script src="js/jquery.fadder.js"></script>
@@ -169,7 +186,6 @@ $(document).ready(function(){
             });  
             
         })
-        
     </script>
     
 </body>

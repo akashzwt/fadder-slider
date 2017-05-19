@@ -8,6 +8,8 @@ Carousel for simply <strong>fade</strong> with responsive.
 Fadder Slider, Here you can setting of dots and arrows. <br>
 Manageable items in desktop as well as responsive with setting option.
 
+## Demo
+[Upcoming]
 
 ### Example
 ````html
@@ -24,7 +26,7 @@ Manageable items in desktop as well as responsive with setting option.
 ````
 
 ### Settings
-Here you can set your responsive screen also. And also set items for that screen viewport.<br> 
+Here you can set your responsive screen also. And also set items for that screen viewport.<br><br> 
 Following shows the default options for Fadder. 
 
 ````javascript

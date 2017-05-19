@@ -48,7 +48,7 @@ ol { margin:15px 0 15px 20px; padding:0; }
 ol li { font-size:16px; color:#000; font-weight:400; line-height:18px; padding:0 0 5px 0; list-style: decimal;  }
 blockquote { display:block; text-align:left; margin-bottom:15px; position:relative; background:#E2E4E1; padding:15px 15px 10px 15px; border-left:2px solid #668e39; }
 blockquote p { font-size:13px; font-weight:400; line-height:17px; margin-bottom:15px; position:relative; }
-hr { border:0 #ebebeb solid; border-top-width:1px; clear:both; height:0; }
+hr { border:0 #c2c2c2 solid; border-top-width:1px; clear:both; height:0; }
 
 /* 3. Images
 ------------------------------------------------------------------------------*/
